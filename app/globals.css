@@ -5,7 +5,7 @@
 @layer base {
   
   nav {
-    @apply absolute top-0 right-0 bottom-0 w-[300px] z-10;
+    @apply absolute top-[100px] bottom-0 w-[300px] z-10;
   }
   ul {
     @apply pl-10 absolute top-8 w-[260px];
@@ -46,7 +46,7 @@
     @apply text-white
   }
   .topnave{
-    @apply shadow-md w-[100%] h-[80px] sticky top-0 left-0 right-0 z-[5] bg-[#fff] flex items-center justify-between pl-8 pr-24 md:pr-32
+    @apply shadow-md max-w-[1440px] mx-auto h-[80px] sticky top-0 left-0 right-0 z-[5] bg-[#FFF] flex items-center justify-between p-8
   }
   .navlogo{
     @apply flex items-center gap-4
@@ -98,4 +98,8 @@ ul li span {
 }
 .swiper-pagination-bullet-active{
   background-color: black !important;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
 }

@@ -2,6 +2,7 @@ import Cartlogo from "./Cartlogo";
 import Myimage from "./Myimage";
 function Topnav() {
   return (
+    <>
     <div className="topnave">
       <div className="navlogo">
         <Myimage src='/img/logo.jpg' width={120} height={80} className='w-[120px] h-[80px]' priority={true} />
@@ -12,6 +13,7 @@ function Topnav() {
       </div>
       <Cartlogo />
     </div>
+    </>
   );
 }
 

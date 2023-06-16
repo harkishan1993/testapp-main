@@ -1,10 +1,10 @@
 import React from 'react'
-import Container from './Container'
 import MyLink from './Mylink'
 import Myimage from './Myimage'
+import Homecontainer from './Homecontainer'
 function Homesectionone() {
   return (
-    <Container>
+    <Homecontainer>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <div className='flex flex-col items-center justify-center gap-4 order-2 md:order-1'>
                 <h1 className='headtext'>Partners in Measurement $ Control</h1>
@@ -17,7 +17,7 @@ function Homesectionone() {
                 <Myimage src='/img/product1.jpg' width={500} height={500} className='w-[100%] rounded-lg shadow-xl' priority={false}/>
             </div>
         </div>
-    </Container>
+    </Homecontainer>
   )
 }
 

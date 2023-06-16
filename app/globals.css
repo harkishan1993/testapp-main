@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  
+  nav {
+    @apply absolute top-0 right-0 bottom-0 w-[300px] z-10;
+  }
+  ul {
+    @apply pl-10 absolute top-8 w-[260px];
+  }
+  div.navcartdiv{
+    @apply p-10 absolute top-[80px] w-[260px];
+  }
+  li:first-of-type {
+    @apply mb-20
+  }
+  li {
+    @apply flex items-center mb-2 space-x-6 cursor-pointer capitalize;
+  }
+  
+  button {
+    @apply border-0 outline-none focus:outline-none absolute top-[17px] right-[16px] w-[50px] h-[50px] rounded-full z-30;
+  }
+}
+@media (max-width:275px) {
+  ul{
+    @apply pl-20
+  }
+}
+@layer components {
+  .background {
+    @apply bg-black absolute top-0 left-0 bottom-0 w-[300px];
+  }
+  .icon-placeholder {
+    @apply w-[45px] h-[45px] rounded-full;
+  }
+  .text-placeholder {
+    @apply flex-1 h-8 rounded-lg;
+  }
+  .navlink{
+    @apply text-gray-400 font-bold text-xl hover:text-white
+  }
+  .active{
+    @apply text-white
+  }
+  .topnave{
+    @apply shadow-md w-[100%] h-[80px] sticky top-0 left-0 right-0 z-[5] bg-[#fff] flex items-center justify-between pl-8 pr-24 md:pr-32
+  }
+  .navlogo{
+    @apply flex items-center gap-4
+  }
+  .navflag{
+    @apply flex items-center gap-2
+  }
+  .textbase{
+    @apply text-base text-gray-800
+  }
+  .btn {
+    @apply  px-6 py-2 bg-black rounded-full transition-all duration-300 hover:ring-2 hover:ring-black hover:ring-offset-2 text-white text-lg font-bold capitalize  flex items-center justify-center
+  }
+  .headtext{
+    @apply text-3xl font-bold
+  }
+  .productname{
+    @apply text-lg font-semibold text-sky-800
+  }
+  .productprice{
+    @apply text-base text-gray-700
+  }
+  .sectiontitle{
+    @apply text-2xl font-bold capitalize
+  }
+  .shadowapply {
+    @apply shadow-[0px_4px_10px_0px_rgba(0,0,0,0.4)]
+  }
+  .othertext{
+    @apply text-base text-gray-700
+  }
+  .linktext{
+    @apply text-lg text-blue-500 
+  }
+}
+
+/* menu items */
+
+ul li span {
+ border-bottom: 2px solid #FF008C;
+}
+.swiper-pagination{
+  bottom: -33px !important;
+  padding-bottom: 28px !important;
+}
+.swiper-pagination-bullet{
+  width: 20px !important;
+  height: 20px !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: black !important;
+}

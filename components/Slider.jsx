@@ -21,16 +21,20 @@ function Slider() {
                     slidesPerView={3}
                     breakpoints={{
                         0: {
-                            slidesPerView: 1
+                            slidesPerView: 1,
+                            spaceBetween:0
                         },
                         525: {
                             slidesPerView: 2,
+                            spaceBetween:15
                         },
                         1024: {
                             slidesPerView: 3,
+                            spaceBetween:30
                         },
                         1360: {
                             slidesPerView: 4,
+                            spaceBetween:30
                         }
                     }}
                 >

@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Container from './Container'
 import Slider from './Slider'
@@ -7,7 +6,7 @@ function Homesectiontwo() {
     return (
         <Container>
             <div className='relative pb-8'>
-                <div className='flex flex-col justify-center items-center gap-4 p-4'>
+                <div className='flex flex-col justify-center items-center gap-4 pb-4'>
                     <Sectiontitle>Our Products</Sectiontitle>
                     <p className='othertext'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cumque iure vel neque asperiores totam nostrum fuga eius, nesciunt, distinctio dolorum voluptatibus iste expedita. Eius illo sit id dolores magnam.

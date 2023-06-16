@@ -1,9 +1,6 @@
 import Myimage from "./Myimage"
 import MyLink from "./Mylink"
 
-import Myimage from "./Myimage"
-import MyLink from "./Mylink"
-
 function Slidechilds({ children }) {
     return (
         <div>

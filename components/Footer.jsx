@@ -10,7 +10,7 @@ function Footer() {
     return (
         <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-12">
-                <div className="flex flex-col justify-start text-start md:items-center gap-3 md:gap-5">
+                <div className="flex flex-col justify-start item-start md:items-center gap-3 md:gap-5">
                     <h4 className='text-xl font-semibold flex justify-center items-center gap-3'><span><FaRegHandPointRight /></span> Useful Links</h4>
                     <div className="flex flex-col gap-4">
                         <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Careers</MyLink>

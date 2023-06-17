@@ -9,9 +9,9 @@ import {
 function Footer() {
     return (
         <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-12">
-                <div className="flex flex-col justify-start items-center gap-5">
-                    <h4 className='text-xl font-semibold flex gap-3'><span><FaRegHandPointRight /></span> Useful Links</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-4 sm:p-12">
+                <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5">
+                    <h4 className='text-xl font-semibold flex justify-center items-center gap-3'><span><FaRegHandPointRight /></span> Useful Links</h4>
                     <div className="flex flex-col gap-4">
                         <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Careers</MyLink>
                         <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Quality Policy</MyLink>
@@ -22,8 +22,8 @@ function Footer() {
                         <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Terms of Service</MyLink>
                     </div>
                 </div>
-                <div className="flex flex-col justify-start items-center gap-5">
-                    <h4 className='text-xl font-semibold flex gap-3'><span><FaRegHandPointRight /></span> Contact Us</h4>
+                <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5">
+                    <h4 className='text-xl font-semibold flex gap-3 justify-center items-center'><span><FaRegHandPointRight /></span> Contact Us</h4>
                     <div className="flex flex-col gap-4">
                         <span className="text-sm capitalize">Landline: <span className="text-gray-400">02828-999999</span></span>
                         <span className="text-sm capitalize">Mobile: <span className="text-gray-400">02828-999999</span>, <span className="text-gray-400">02828-999999</span></span>
@@ -46,8 +46,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-start items-center gap-4">
-                    <h4 className='text-xl font-semibold flex gap-3'><span><FaRegHandPointRight /></span> Product Catalog</h4>
+                <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5">
+                    <h4 className='text-xl font-semibold flex gap-3 justify-center items-center'><span><FaRegHandPointRight /></span> Product Catalog</h4>
                     <Download />
                     <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Whatsapp me the Product Catalog</MyLink>
 

@@ -73,7 +73,7 @@
     @apply text-2xl font-bold capitalize
   }
   .shadowapply {
-    @apply shadow-[0px_4px_10px_0px_rgba(0,0,0,0.4)]
+    @apply border-[1.5px] shadow-md
   }
   .othertext{
     @apply text-base text-gray-700

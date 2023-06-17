@@ -20,9 +20,6 @@
     @apply flex items-center mb-2 space-x-6 cursor-pointer capitalize;
   }
   
-  button {
-    @apply border-0 outline-none focus:outline-none absolute top-[17px] right-[16px] w-[50px] h-[50px] rounded-full z-30;
-  }
 }
 @media (max-width:275px) {
   ul{

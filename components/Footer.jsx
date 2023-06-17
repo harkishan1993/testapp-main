@@ -9,7 +9,7 @@ import {
 function Footer() {
     return (
         <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-4 sm:p-12">
                 <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5">
                     <h4 className='text-xl font-semibold flex justify-center items-center gap-3'><span><FaRegHandPointRight /></span> Useful Links</h4>
                     <div className="flex flex-col gap-4">

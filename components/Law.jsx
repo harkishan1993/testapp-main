@@ -6,7 +6,7 @@ function Law() {
     return (
         <Container>
             <div className="flex flex-col justify-center items-center gap-4">
-                <Sectiontitle>We simply pursue Ω's Law!</Sectiontitle>
+                <Sectiontitle>We simply pursue's Law!</Sectiontitle>
                 <div className="grid grid-cols-1 grid-rows-1 min-[825px]:grid-cols-5 min-[825px]:grid-rows-1 gap-4">
                     <div className="flex justify-center">
                         <Myimage src='/img/product4.jpg' width={100} height={100} className='w-[125px] h-[125px] rounded-full' priority={false}/>

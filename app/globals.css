@@ -100,3 +100,8 @@ ul li span {
 body {
   -webkit-tap-highlight-color: transparent;
 }
+.textset {
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 40px;
+}

@@ -43,7 +43,11 @@
     @apply text-white
   }
   .topnave{
+<<<<<<< HEAD
     @apply shadow-md max-w-[1440px] mx-auto h-[80px] sticky top-0 left-0 right-0 z-30 bg-[#FFF] flex items-center justify-between px-8 py-2
+=======
+    @apply shadow-md max-w-[1440px] mx-auto h-[80px] sticky top-0 left-0 right-0 z-30  bg-[#FFF] flex items-center justify-between p-8
+>>>>>>> dbb843ae840d98166e0e1ba2c54c26324fa8ae98
   }
   .navlogo{
     @apply flex items-center gap-4

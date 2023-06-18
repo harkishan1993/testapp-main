@@ -1,5 +1,6 @@
 import Cartlogo from "./Cartlogo";
 import Myimage from "./Myimage";
+import Navslide from "./Navslide";
 function Topnav() {
   return (
     <>
@@ -13,6 +14,7 @@ function Topnav() {
       </div>
       <Cartlogo />
     </div>
+    <Navslide />
     </>
   );
 }

@@ -1,8 +1,11 @@
-import React from 'react'
-
+import Pageheader from "@/components/Pageheader"
+import Sectionone from "./components/Sectionone"
 function page() {
   return (
-    <div>page</div>
+    <>
+       <Pageheader pageTitle='Products' />
+       <Sectionone />
+    </>
   )
 }
 

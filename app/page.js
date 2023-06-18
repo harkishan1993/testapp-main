@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Homesectionfive from "@/components/Homesectionfive";
 import Homesectionfour from "@/components/Homesectionfour";
 import Homesectionone from "@/components/Homesectionone";
@@ -15,7 +14,6 @@ export default function Home() {
     <Homesectionthree/>
     <Homesectionfour/>
     <Homesectionfive />
-    <Footer />
     </>
   );
 }

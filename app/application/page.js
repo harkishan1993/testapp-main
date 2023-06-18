@@ -1,8 +1,9 @@
+import Pageheader from '@/components/Pageheader'
 import React from 'react'
 
 function page() {
   return (
-    <Pageheader pageTitle='Inddustries' />
+    <Pageheader pageTitle='Application' />
   )
 }
 

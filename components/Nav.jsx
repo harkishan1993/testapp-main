@@ -7,7 +7,7 @@ function Nav() {
     const useSelector = useAppSelector((state => state.navbarReducer.open));
     return (
         <>
-            <motion.div className='flex justify-center items-center w-[50px] h-[50px] pt-[2px] pl-[1px] rounded-full cursor-pointer bg-black' initial={false} animate={useSelector ? "open" : "closed"}>
+            <motion.div className='flex justify-center items-center w-[50px] h-[50px] pt-[2px] pl-[1px] rounded-full bg-black' initial={false} animate={useSelector ? "open" : "closed"}>
                 <Toggler />
             </motion.div>
         </>

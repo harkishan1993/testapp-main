@@ -7,25 +7,14 @@
   nav {
     @apply absolute top-[100px] bottom-0 w-[300px] z-10;
   }
-  ul {
-    @apply pl-10 absolute top-8 w-[260px];
-  }
+ 
   div.navcartdiv{
     @apply p-10 absolute top-[80px] w-[260px];
   }
-  li:first-of-type {
-    @apply mb-20
-  }
-  li {
-    @apply flex items-center mb-2 space-x-6 cursor-pointer capitalize;
-  }
+
   
 }
-@media (max-width:275px) {
-  ul{
-    @apply pl-20
-  }
-}
+
 @layer components {
   .background {
     @apply bg-black absolute top-0 left-0 bottom-0 w-[300px];
@@ -37,13 +26,13 @@
     @apply flex-1 h-8 rounded-lg;
   }
   .navlink{
-    @apply text-gray-400 font-bold text-xl hover:text-white
+    @apply text-gray-400 font-bold text-[16px] leading-[20px] hover:text-white
   }
   .active{
     @apply text-white
   }
   .topnave{
-    @apply shadow-md max-w-[1440px] mx-auto h-[80px] sticky top-0 left-0 right-0 z-30 bg-[#FFF] flex items-center justify-between px-8 py-2
+    @apply shadow-md max-w-[1440px] mx-auto h-[80px] sticky top-0 left-0 right-0 z-30 bg-[#FFF] flex items-center justify-between px-4 md:px-8 py-2
   }
   .navlogo{
     @apply flex items-center gap-4
@@ -82,9 +71,6 @@
 
 /* menu items */
 
-ul li span {
- border-bottom: 2px solid #FF008C;
-}
 .swiper-pagination{
   bottom: -33px !important;
   padding-bottom: 28px !important;
@@ -104,4 +90,42 @@ body {
   text-align: justify;
   text-justify: inter-word;
   text-indent: 40px;
+}
+
+/* accordian */
+
+.sidebar-item{
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 8px;
+}
+.sidebar-item:hover{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-title{
+  display: flex;
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+.sidebar-item.open > .sidebar-content{
+  height: auto;
 }

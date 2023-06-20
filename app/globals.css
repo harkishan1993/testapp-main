@@ -26,7 +26,7 @@
     @apply flex-1 h-8 rounded-lg;
   }
   .navlink{
-    @apply text-gray-400 font-bold text-[16px] leading-[20px] hover:text-white
+    @apply text-gray-400 font-medium text-sm hover:text-white
   }
   .active{
     @apply text-white
@@ -86,6 +86,23 @@
 body {
   -webkit-tap-highlight-color: transparent;
 }
+.navbarscroll{
+  overflow: auto;
+}
+.navbarscroll::-webkit-scrollbar{
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.navbarscroll{
+  -ms-overflow-style: none;  
+scrollbar-width: none; 
+}
+body {
+-ms-overflow-style: none;  
+scrollbar-width: none; 
+}
 .textset {
   text-align: justify;
   text-justify: inter-word;
@@ -100,11 +117,13 @@ body {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
   gap: 2px;
-  padding: 0 8px;
 }
 .sidebar-item:hover{
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .sidebar-title{
@@ -122,10 +141,12 @@ body {
   transform: rotate(180deg);
 }
 .sidebar-content{
-  padding-top: .25em;
   height: 0;
   overflow: hidden;
+  border: 1px solid whitesmoke;
 }
 .sidebar-item.open > .sidebar-content{
   height: auto;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }

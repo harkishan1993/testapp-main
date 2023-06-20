@@ -11,7 +11,7 @@ function Navslide() {
         setOpen(useSelector)
     },[useSelector])
     return (
-        <motion.div initial={{right: -282 }} animate={{right: open?0:-282}} className='fixed w-[280px] h-full flex flex-col gap-2 overflow-auto bg-black z-30 p-6 right-0 top-[80px]'>
+        <motion.div initial={{right: -282 }} animate={{right: open?0:-282}} className='fixed w-[280px] h-full flex flex-col gap-2 overflow-auto bg-black z-30 p-6 right-0 top-[80px] navbarscroll'>
             { items.map((item, index) => <SidebarItem key={index} item={item} />) }
         </motion.div>
     )

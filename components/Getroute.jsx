@@ -22,7 +22,9 @@ function Getroute() {
                     <React.Fragment key={index}>
                         <span className="capitalize text-base text-gray-400"><FaChevronRight /></span>
                         <span className="capitalize text-base text-gray-400">
-                            {route.length == index + 1 ? path : (<><MyLink href={`/${path}`} className="capitalize text-base text-gray-400 hover:text-white">{path}</MyLink></>)}
+                            {
+                            route.length == index + 1 ? path : (route.length-1 == index+1) ? (<><MyLink href={`/${path}`} className="capitalize text-base text-gray-400 hover:text-white">{path}</MyLink></>):'..'
+                            }
                         </span>
                     </React.Fragment>
                 )

@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useAppSelector } from '@/redux/hooks'
+import {items} from '@/data/sidebar'
+import SidebarItem from './SidebarItem'
 function Navslide() {
     const useSelector = useAppSelector((state => state.navbarReducer.open));
     const [open, setOpen] = useState(useSelector);
@@ -9,7 +11,9 @@ function Navslide() {
         setOpen(useSelector)
     },[useSelector])
     return (
-        <motion.div initial={{right: -282 }} animate={{right: open?0:-282}} className='fixed w-[280px] min-h-full bg-black z-30 right-0 top-[80px]'></motion.div>
+        <motion.div initial={{right: -282 }} animate={{right: open?0:-282}} className='fixed w-[280px] h-full flex flex-col gap-2 bg-black z-30 p-6 right-0 top-[80px] navbarscroll'>
+            { items.map((item, index) => <SidebarItem key={index} item={item} />) }
+        </motion.div>
     )
 }
 

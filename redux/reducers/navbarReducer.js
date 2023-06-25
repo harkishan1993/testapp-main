@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     open: false,
+    route:''
   }
 
   export const counter = createSlice({
@@ -11,8 +12,11 @@ const initialState = {
       openclose: (state) => {
         state.open = !state.open;
       },
+      getroute: (state, action) => {
+        state.route = action.payload;
+      },
     },
   });
   
-  export const { openclose } = counter.actions;
+  export const { openclose, getroute } = counter.actions;
   export default counter.reducer;

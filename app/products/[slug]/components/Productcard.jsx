@@ -8,7 +8,7 @@ function Productcard({ name, price, path = "/" }) {
             <div className="p-4 flex flex-col justify-center text-center gap-2">
                 <h3 className="productname"><MyLink href={path}>{name}</MyLink></h3>
                 <span className="productprice">{price}</span>
-                <MyLink href='/products/temperature-controllers/portable-thermometer–dtm-21' className="cartbtn">
+                <MyLink href='/products/temperature-controllers/portable-thermometer-dtm-21' className="cartbtn">
                         view details
                 </MyLink>
                 <div className="flex items-center gap-2 text-emerald-800">

@@ -55,13 +55,13 @@ function Productdetail() {
                                 <Myimage src='/img/THW-1.jpg' width={300} height={300} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
                             </SwiperSlide>
                         </Swiper>
                     </div>
@@ -76,40 +76,40 @@ function Productdetail() {
                             className="mySwiper"
                         >
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
+                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>
                         </Swiper>
                     </div>
 
                 </div>
-                <div className="p-5 flex flex-col gap-4">
+                <div className="lg:p-5 flex flex-col gap-4">
                     <div className="mb-4">
                         <h1 className="productdetailTitle inline-block">Portable Thermometer – DTM-21
                             <div className="h-[1px] w-full bg-slate-300"></div>

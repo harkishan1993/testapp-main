@@ -1,3 +1,4 @@
+
 import Container from "@/components/Container"
 import Productcard from "./Productcard"
 import { products } from "@/data/productpage"
@@ -14,5 +15,4 @@ function Sectionone() {
         </Container>
     )
 }
-
 export default Sectionone

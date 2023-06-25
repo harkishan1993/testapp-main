@@ -1,3 +1,4 @@
+
 import Pageheader from "@/components/Pageheader"
 import Sectionone from "./components/Sectionone"
 import {Productdetails} from "@/data/productpage"

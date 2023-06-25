@@ -14,7 +14,7 @@ function Homesectionone() {
                 </MyLink>
             </div>
             <div className='order-1 md:order-2'>
-                <Myimage src='/img/Front.png' width={500} height={500} className='w-[100%] h-[375px] rounded-lg shadow-xl' priority={false}/>
+                <Myimage src='/img/Front.png' width={500} height={500} className='w-[100%] h-auto rounded-lg shadow-xl' priority={false}/>
             </div>
         </div>
     </Homecontainer>

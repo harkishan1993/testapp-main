@@ -1,8 +1,16 @@
 import React from 'react'
-
-function page() {
+import Productdetail from './components/Productdetail'
+import Pageheader from '@/components/Pageheader'
+import "./globals.css"
+import Description from './components/Description'
+function page({ params }) {
+  const {product} = params
   return (
-    <div>page</div>
+    <>
+      <Pageheader pageTitle='Products' />
+      <Productdetail/>
+      <Description />
+    </>
   )
 }
 

@@ -45,27 +45,9 @@ function Productdetail() {
                             <SwiperSlide>
                                 <Myimage src='/img/THW-1.jpg' width={300} height={300} />
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={300} height={300} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={250} height={250} />
-                            </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div>
+                    <div className="mb-5 lg:mb-0">
                         <Swiper
                             onSwiper={setThumbsSwiper}
                             spaceBetween={10}
@@ -75,24 +57,6 @@ function Productdetail() {
                             modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiper"
                         >
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <Myimage src='/img/THW-1.jpg' width={50} height={50} />
-                            </SwiperSlide>
                             <SwiperSlide>
                                 <Myimage src='/img/THW-1.jpg' width={50} height={50} />
                             </SwiperSlide>

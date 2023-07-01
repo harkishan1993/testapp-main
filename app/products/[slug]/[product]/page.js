@@ -3,6 +3,7 @@ import Productdetail from './components/Productdetail'
 import Pageheader from '@/components/Pageheader'
 import "./globals.css"
 import Description from './components/Description'
+import Relativeprod from './components/Relativeprod'
 function page({ params }) {
   const {product} = params
   return (
@@ -10,6 +11,7 @@ function page({ params }) {
       <Pageheader pageTitle='Products' />
       <Productdetail/>
       <Description />
+      <Relativeprod />
     </>
   )
 }

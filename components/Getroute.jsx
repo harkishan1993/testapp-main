@@ -14,7 +14,7 @@ function Getroute() {
     useEffect(() => {
         dispatch(getroute(getpath))
         setRoute(routeArray)
-    }, [getpath])
+    }, [getpath, dispatch, routeArray])
     let linkPath = ''
     return (
         <>

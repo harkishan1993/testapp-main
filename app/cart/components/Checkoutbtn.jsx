@@ -10,7 +10,7 @@ function Checkoutbtn() {
     }]
     const handleBtn = async () => {
         const stripe = await getStripePromise()
-        const response = await fetch('http://localhost:3000/api/stripe-session/', {
+        const response = await fetch('https://testapp-zeta-five.vercel.app/api/stripe-session/', {
             method: "POST", 
             cache: "no-cache", 
             headers: {

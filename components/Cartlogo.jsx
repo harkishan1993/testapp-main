@@ -6,7 +6,7 @@ function Cartlogo({color=''}) {
     <div className="flex gap-5 items-center md:gap-6">
           <MyLink href='/cart' className="relative">
             <FaShoppingCart className={`text-2xl ${color}`}/>
-            <span className="absolute -top-3 -right-3 w-5 h-5 bg-red-800 rounded-full flex text-sm text-white justify-center items-center">0</span>
+            <span className="absolute -top-3 -right-3 w-5 h-5 bg-red-800 rounded-full flex text-sm text-white justify-center items-center">2</span>
           </MyLink>
           <FaSearch className={`text-2xl ${color}`}/>
           <Nav/>

@@ -23,7 +23,7 @@ function page() {
                     </div>
                     <div>
                         <div className='flex justify-between items-center border-b-2 gap-5'>
-                            <div className='capitalize font-semibold'>Shipping</div>
+                            <div className='capitalize font-semibold'>Total</div>
                             <div className='text-xl font-bold md:text-2xl md:font-extrabold tracking-wider line-clamp-2'>₹12,000</div>
                         </div>
                     </div>

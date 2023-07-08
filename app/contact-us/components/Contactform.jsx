@@ -31,15 +31,15 @@ function Contactform() {
                     <span className='text-lg text-red-800 font-medium tracking-wider'></span>
                     <div className='flex flex-col gap-[30px]'>
                         <div className='flex flex-col gap-1'>
-                            <input type="text" name='name' value={values.name} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Name' />
+                            <input type="text" name='name' value={values.name} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Name*' />
                             { errors.name && touched.name ? <span className='text-sm text-red-800 font-medium tracking-wider'>{errors.name}</span>: null}
                         </div>
                         <div className='flex flex-col gap-1'>
-                            <input type="number" name='phone' value={values.phone} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Phone' />
+                            <input type="number" name='phone' value={values.phone} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Phone*' />
                             { errors.phone && touched.phone ? <span className='text-sm text-red-800 font-medium tracking-wider'>{errors.phone}</span>: null}
                         </div>
                         <div className='flex flex-col gap-1'>
-                            <input type="email" name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Email' />
+                            <input type="email" name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} className='form-input font-mono text-[20px] leading-[25px] placeholder:text-black h-[54px] px-[25px] py-[15px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] border-none' placeholder='Email*' />
                             { errors.email && touched.email ? <span className='text-sm text-red-800 font-medium tracking-wider'>{errors.email}</span>: null}
                         </div>
                         <div className='flex flex-col gap-1'>

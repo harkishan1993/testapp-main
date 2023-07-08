@@ -9,31 +9,79 @@ export const items = [
         "path": "/products",
         "childrens": [
             {
-                "title": "Digital Indicators",
+                "title": "Sensors",
                 "path": "/",
+                "childrens": [
+                    {
+                        "title": "Temperature & Humidity",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Gas Sensors",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Air Velocity",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Pressure",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Level",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Flow",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Clean Room Sensors",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Dew Point",
+                        "path": "/",
+                    },
+                ]
             },
             {
-                "title": "Temperature Controllers",
+                "title": "Controller",
+                "path": "/",
+                "childrens": [
+                    {
+                        "title": "Temperature Controller",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Humidity Controller",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Pressure Controller",
+                        "path": "/",
+                    },
+                    {
+                        "title": "Air Velocity Controller",
+                        "path": "/",
+                    },
+                    {
+                        "title": "AHU Controller",
+                        "path": "/",
+                    },
+                ]
+            },
+            {
+                "title": "IOT Products",
                 "path": "/"
             },
             {
-                "title": "Data Loggers & Scanners",
+                "title": "Data Converters",
                 "path": "/"
             },
             {
-                "title": "Temperataure & Humidity Instruments",
-                "path": "/"
-            },
-            {
-                "title": "Thyristror Triggering Cards",
-                "path": "/"
-            },
-            {
-                "title": "Thyristore Power Controller",
-                "path": "/"
-            },
-            {
-                "title": "Product Accessories",
+                "title": "Industrial Panel",
                 "path": "/"
             },
         ]
@@ -43,15 +91,23 @@ export const items = [
         "path": "/services",
         "childrens": [
             {
-                "title": "Data Acquisition Software",
+                "title": "Customise Product Manufacturing",
                 "path": "/"
             },
             {
-                "title": "Internet of Things",
+                "title": "IOT (Internet of Things)",
                 "path": "/"
             },
             {
-                "title": "Post Weld Heat Treatment",
+                "title": "Industrial Data Analyst",
+                "path": "/"
+            },
+            {
+                "title": "Customise IOT Solution",
+                "path": "/"
+            },
+            {
+                "title": "All in one Instrument Designing",
                 "path": "/"
             },
         ]

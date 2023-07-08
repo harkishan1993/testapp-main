@@ -9,13 +9,12 @@ const stripe = new Stripe(key, {
 
 export const POST = async (req) => {
     const body = await req.json();
-    console.log(body)
     try {
         if (body.length > 0) {
             const session = await stripe.checkout.sessions.create({
                 submit_type: "pay",
                 payment_method_types: ['card'],
-                billing_address_collection: "auto",
+                billing_address_collection: "required",
                 shipping_options: [{ shipping_rate: "shr_1NQyO8SApofhLfBI37CX0Xri" }],
                 line_items: [{
                     price_data: {
@@ -24,9 +23,10 @@ export const POST = async (req) => {
                         name: 'T-shirt',
                       },
                       unit_amount: 2000,
+
                     },
                     quantity: 1,
-                  }],
+                  }],  
                 line_items: body.map((item) => {
                     return {
                         price_data: {
@@ -40,6 +40,9 @@ export const POST = async (req) => {
                       }
                 }),
                 mode: 'payment',
+                phone_number_collection:{
+                  enabled: true
+                },
                 success_url: `${req.headers.get('origin')}/?success=true`,
                 cancel_url: `${req.headers.get('origin')}/?canceled=true`,
             });

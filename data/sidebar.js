@@ -136,7 +136,7 @@ export const items = [
     },
     {
         "title": "Applications",
-        "path": "/"
+        "path": "/application"
     },
     {
         "title": "Contact Us",

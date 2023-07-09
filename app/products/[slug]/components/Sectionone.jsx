@@ -7,7 +7,7 @@ function Sectionone({productSlug}) {
      })
   return (
     <Container>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 xl:grid-cols-4 gap-[20px] md:gap-[40px] grid-flow-dense'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px] md:gap-[40px] grid-flow-dense'>
              {
              getResult?.[0]?.product?.map((product, index)=>{
                 return <Productcard key={index} name={product?.name} price={product?.price} />

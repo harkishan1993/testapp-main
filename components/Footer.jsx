@@ -22,16 +22,13 @@ function Footer() {
                         <MyLink href='/' className="text-gray-400 font-bold text-sm hover:text-white">Terms of Service</MyLink>
                     </div>
                 </div>
-                <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5">
+                <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5 break-words">
                     <h4 className='text-xl font-semibold flex gap-3 justify-center items-center'><span><FaRegHandPointRight /></span> Contact Us</h4>
                     <div className="flex flex-col gap-4">
-                        <span className="text-sm capitalize">Landline: <span className="text-gray-400">02828-999999</span></span>
-                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400">02828-999999</span>, <span className="text-gray-400">02828-999999</span></span>
-                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400 text-justify">exampleexampel1@gamil.com</span>, <span className="text-gray-400">exampleexampel1@gamil.com</span></span>
+                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400">+91-7984840004</span></span>
+                        <span className="text-sm capitalize">Email: <span className="text-gray-400 text-justify lowercase">tenacious.instrumet@gmail.com</span></span>
                         <span className="text-sm capitalize">
-                            501,502,503 mahadev industrial estate,
-                            krishna palace park road,vatva, ahamdabad(100001),
-                            gujrat,india
+                            gujrat, india
                         </span>
                     </div>
                     <div className="flex flex-col gap-1">

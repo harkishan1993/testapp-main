@@ -40,8 +40,8 @@ function Slider() {
                 }}
             >
                 {
-                    sliderProduct.map((value) => {
-                        return <SwiperSlide>
+                    sliderProduct.map((value, index) => {
+                        return <SwiperSlide key={index}>
                             <Slidechilds name={value.name} price={value.price} image={value.image} />
                         </SwiperSlide>
 

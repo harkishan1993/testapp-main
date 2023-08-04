@@ -149,7 +149,7 @@ export const sliderProduct = [
     },
     {
         id: 2,
-        name: 'Temperature and Humidity Wall Mount Transmitters THW-1',
+        name: 'Clean Room Monitor CR-1',
         price: '₹2000 - ₹9000',
         image: '/img/CR1.jpg'
 

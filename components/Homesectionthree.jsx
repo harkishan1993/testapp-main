@@ -12,17 +12,17 @@ function Homesectionthree() {
                         <div className="p-1 flex flex-col items-center justify-between rounded-[10px] shadowapply">
                             <Myimage src='/img/application.jpg' width={150} height={80} className='w-[100%] h-auto rounded-[10px]' priority={false} />
                             <h3 className="productname mx-4 my-2"><MyLink href='/'>SCR Power Regulators</MyLink></h3>
-                            <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink>
+                            {/* <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink> */}
                         </div>
                         <div className="p-1 flex flex-col items-center rounded-[10px] shadowapply">
                             <Myimage src='/img/application.jpg' width={150} height={80} className='w-[100%] h-auto rounded-[10px]' priority={false} />
                             <h3 className="productname mx-4 my-2"><MyLink href='/'>SCR Triggering Cards for OEM</MyLink></h3>
-                            <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink>
+                            {/* <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink> */}
                         </div>
                         <div className="p-1 flex flex-col items-center rounded-[10px] shadowapply">
                             <Myimage src='/img/application.jpg' width={150} height={80} className='w-[100%] h-auto rounded-[10px]' priority={false} />
                             <h3 className="productname mx-4 my-2"><MyLink href='/'>Thyristor Power Switches</MyLink></h3>
-                            <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink>
+                            {/* <MyLink href='/' className="linktext mx-4 my-2">read more</MyLink> */}
                         </div>
                 </div>
             </div>

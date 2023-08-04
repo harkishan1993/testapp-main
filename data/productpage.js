@@ -153,5 +153,6 @@ export const sliderProduct = [
         price: '₹2000 - ₹9000',
         image: '/img/CR1.jpg'
 
-    }
+    },
+    
 ]

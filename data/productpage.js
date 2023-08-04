@@ -139,3 +139,19 @@ export const application = [{
     isLike: false
 }
 ]
+
+export const sliderProduct = [
+    {
+        id: 1,
+        name: 'Temperature and Humidity Wall Mount Transmitters THW-1',
+        price: '₹2000 - ₹9000',
+        image: '/img/THW-1.jpg'
+    },
+    {
+        id: 2,
+        name: 'Temperature and Humidity Wall Mount Transmitters THW-1',
+        price: '₹2000 - ₹9000',
+        image: '/img/CR1.jpg'
+
+    }
+]

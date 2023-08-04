@@ -10,10 +10,10 @@ export default function Home() {
     <>
     <Homesectionone/>
     <Homesectiontwo/>
-    <Law/>
+    {/* <Law/> */}
     <Homesectionthree/>
     <Homesectionfour/>
-    <Homesectionfive />
+    {/* <Homesectionfive /> */}
     </>
   );
 }

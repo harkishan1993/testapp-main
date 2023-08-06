@@ -7,7 +7,7 @@ import Relativeprod from './components/Relativeprod'
 async function page({ params:{product} }) {
   let products = [];
   try {
-     products = await fetch(`${process.env.URL_BASE}/api/product/${product}`,{
+     products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
       next:{
         revalidate:1
       }

@@ -3,7 +3,7 @@ import Sectionone from "./components/Sectionone"
 async function page() {
   let product = []
   try {
-     product = await fetch(`${process.env.URL_BASE}/api/product`,{
+     product = await fetch(`https://tenaciousinstrument.in/api/product`,{
       next:{
         revalidate:1
       }

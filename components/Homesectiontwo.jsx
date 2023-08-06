@@ -6,7 +6,7 @@ import Sectiontitle from './Sectiontitle'
 async function Homesectiontwo() {
         let product = []
         try {
-           product = await fetch(`${process.env.URL_BASE}/api/slider`,{
+           product = await fetch(`https://tenaciousinstrument.in/api/slider`,{
             next:{
               revalidate:1
             }

@@ -2,9 +2,7 @@ import Pageheader from "@/components/Pageheader"
 import Sectionone from "./components/Sectionone"
 async function page() {
   let product = await fetch(`https://tenaciousinstrument.in/api/product`,{
-      next:{
-        revalidate:1
-      }
+      cache:'no-cache'
      }).then((r)=>r.json()) 
  
   return (

@@ -6,9 +6,7 @@ import Description from './components/Description'
 import Relativeprod from './components/Relativeprod'
 async function page({ params:{product} }) {
   let products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
-      next:{
-        revalidate:0
-      }
+     cache:'no-cache'
      }).then((r)=>r.json()) 
  
   return (

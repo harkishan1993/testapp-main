@@ -5,9 +5,7 @@ import Sectiontitle from './Sectiontitle'
 
 async function Homesectiontwo() {
     let product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
-        next: {
-            revalidate: 1
-        }
+       cache:'no-cache'
     }).then((r) => r.json())
 
     return (

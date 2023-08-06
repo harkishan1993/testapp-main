@@ -4,7 +4,7 @@ const nextConfig = {
     domains: ['localhost','res.cloudinary.com'],
   },
   env: {
-    URL_BASE: 'http://localhost:3000'
+    URL_BASE: 'https://tenaciousinstrument.in'
   }
 }
 

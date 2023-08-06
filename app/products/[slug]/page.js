@@ -6,7 +6,7 @@ import Pageheader from "@/components/Pageheader"
 //     return Productdetails.map((product) => ({
 //       slug: product.category,
 //     }))
-//   }
+//   
 function page({ params }) {
     // const {slug} = params
   return (

@@ -7,6 +7,7 @@ import {
     FaYoutubeSquare, FaWhatsappSquare, FaRegHandPointRight
 } from 'react-icons/fa'
 function Footer() {
+    let arroy = '>>'
     return (
         <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-6 bg-black text-white p-4 sm:p-12">
@@ -25,11 +26,18 @@ function Footer() {
                 <div className="flex flex-col justify-start items-start md:items-center gap-3 md:gap-5 break-words">
                     <h4 className='text-xl font-semibold flex gap-3 justify-center items-center'><span><FaRegHandPointRight /></span> Contact Us</h4>
                     <div className="flex flex-col gap-4">
-                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400">+91-7984840004</span></span>
-                        <span className="text-sm capitalize">Email: <span className="text-gray-400 text-justify lowercase">tenacious.instrumet@gmail.com</span></span>
+                        <span><span>{`${arroy}`}</span> Sales Office Ahmedabad</span>
+                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400">+91-9998684611</span></span>
+                        <span className="text-sm capitalize">Email: <span className="text-gray-400 text-justify lowercase">sales@tenaciousinstrument.in</span></span>
+                        <span><span>{`${arroy}`}</span> Head Office</span>
                         <span className="text-sm capitalize">
-                            gujrat, india
+                            Address: <span className="text-gray-400 text-justify lowercase">Tenacious
+                                77,Ananddham Green City,
+                                Paliyad Road-Botad(364710)
+                                Gujarat India.</span>
                         </span>
+                        <span className="text-sm capitalize">Mobile: <span className="text-gray-400"> +91-7984840004</span></span>
+                        <span className="text-sm capitalize">Email: <span className="text-gray-400 text-justify lowercase">tenacious.instrument@gmail.com</span></span>
                     </div>
                     <div className="flex flex-col gap-1">
                         <h5 className="font-bold">We are Social!</h5>

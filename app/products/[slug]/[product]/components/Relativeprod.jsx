@@ -1,7 +1,7 @@
 import Productcard from "@/app/products/[slug]/components/Productcard"
 import Container from "@/components/Container"
 
-function Relativeprod() {
+function Relativeprod({productRel}) {
     return (
         <Container>
             <div className="mb-4 text-center">
@@ -10,10 +10,11 @@ function Relativeprod() {
                 </h3>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 xl:grid-cols-4 gap-[20px] md:gap-[40px] grid-flow-dense'>
-                <Productcard name='Hygro Thermometer – HTM-22' price='₹1,313 – ₹2,468' />
-                <Productcard name='Hygro Thermometer – HTM-22' price='₹1,313 – ₹2,468' />
-                <Productcard name='Hygro Thermometer – HTM-22' price='₹1,313 – ₹2,468' />
-                <Productcard name='Hygro Thermometer – HTM-22' price='₹1,313 – ₹2,468' />
+                {
+                     productRel?.[0]?.category?.CategoriesOnCategorys?.map((value, index)=>{
+                        return <Productcard key={value} name={value?.producs?.name} path={value?.producs?.slug} image={value?.producs?.image} />
+                     })   
+                }
             </div>
         </Container>
     )

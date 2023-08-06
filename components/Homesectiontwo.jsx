@@ -2,7 +2,18 @@ import React from 'react'
 import Container from './Container'
 import Slider from './Slider'
 import Sectiontitle from './Sectiontitle'
-function Homesectiontwo() {
+
+async function Homesectiontwo() {
+        let product = []
+        try {
+           product = await fetch(`${process.env.URL_BASE}/api/slider`,{
+            next:{
+              revalidate:1
+            }
+           }).then((r)=>r.json()) 
+        } catch (error) {
+          console.log(error);
+        }
     return (
         <Container>
             <div className='relative pb-8'>
@@ -14,7 +25,7 @@ function Homesectiontwo() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum veniam nam incidunt dicta assumenda illo vel omnis aut magnam consectetur, at autem! Laudantium esse autem architecto repellendus consectetur! Laborum, nulla?
                     </p> */}
                 </div>
-                <Slider />
+                <Slider product = {product} />
             </div>
         </Container>
     )

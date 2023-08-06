@@ -4,16 +4,12 @@ import Slider from './Slider'
 import Sectiontitle from './Sectiontitle'
 
 async function Homesectiontwo() {
-        let product = []
-        try {
-           product = await fetch(`https://tenaciousinstrument.in/api/slider`,{
-            next:{
-              revalidate:1
-            }
-           }).then((r)=>r.json()) 
-        } catch (error) {
-          console.log(error);
+    let product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
+        next: {
+            revalidate: 1
         }
+    }).then((r) => r.json())
+
     return (
         <Container>
             <div className='relative pb-8'>
@@ -25,7 +21,7 @@ async function Homesectiontwo() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum veniam nam incidunt dicta assumenda illo vel omnis aut magnam consectetur, at autem! Laudantium esse autem architecto repellendus consectetur! Laborum, nulla?
                     </p> */}
                 </div>
-                <Slider product = {product} />
+                <Slider product={product} />
             </div>
         </Container>
     )

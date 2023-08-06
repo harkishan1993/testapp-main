@@ -5,16 +5,12 @@ import "./globals.css"
 import Description from './components/Description'
 import Relativeprod from './components/Relativeprod'
 async function page({ params:{product} }) {
-  let products = [];
-  try {
-     products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
+  let products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
       next:{
         revalidate:1
       }
      }).then((r)=>r.json()) 
-  } catch (error) {
-    console.log(error);
-  }
+ 
   return (
     <>
       <Pageheader pageTitle='Products' />

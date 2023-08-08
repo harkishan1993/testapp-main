@@ -24,7 +24,7 @@ async function page({ params:{product} }) {
       <Pageheader pageTitle='Products' />
       <Productdetail product = {products} />
       <Description product = {products} />
-      {/* <Relativeprod productRel = {products} /> */}
+      <Relativeprod productRel = {products} />
     </>
   )
 }

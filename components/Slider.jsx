@@ -43,7 +43,7 @@ function Slider({product}) {
                 {
                     product?.data?.map((value, index) => {
                         return <SwiperSlide key={index}>
-                            <Slidechilds name={value?.name} path={value?.slug} image={value.image} />
+                            <Slidechilds name={value?.name} path={value?.slug} image={value?.image} />
                         </SwiperSlide>
 
                     })

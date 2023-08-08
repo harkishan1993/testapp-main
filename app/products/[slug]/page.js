@@ -1,18 +1,30 @@
-
-import Pageheader from "@/components/Pageheader"
-// import Sectionone from "./components/Sectionone"
-// import {Productdetails} from "@/data/productpage"
-// export async function generateStaticParams() {
-//     return Productdetails.map((product) => ({
-//       slug: product.category,
-//     }))
-//   }
-function page({ params }) {
-    // const {slug} = params
+import React from 'react'
+import Productdetail from './components/Productdetail'
+import Pageheader from '@/components/Pageheader'
+import "./globals.css"
+import Description from './components/Description'
+import Relativeprod from './components/Relativeprod'
+const getProduct = async (product) => {
+  let products = []
+  try {
+     products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
+      cache:'no-cache'
+      }).then((r)=>r.json()) 
+    
+  } catch (error) {
+    console.log(error)
+  }
+  return products
+}
+async function page({ params:{product} }) {
+ 
+     const products = await getProduct(product)
   return (
     <>
-     <Pageheader pageTitle='Products' />
-     {/* <Sectionone productSlug = {slug} /> */}
+      <Pageheader pageTitle='Products' />
+      <Productdetail product = {products} />
+      <Description product = {products} />
+      <Relativeprod productRel = {products} />
     </>
   )
 }

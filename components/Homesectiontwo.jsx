@@ -2,12 +2,20 @@ import React from 'react'
 import Container from './Container'
 import Slider from './Slider'
 import Sectiontitle from './Sectiontitle'
-
+const getProduct = async () => {
+    let product = []
+    try {
+        let product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
+            cache: 'no-cache'
+        })
+        product = await product.json()
+    } catch (error) {
+        console.log(error)
+    }
+    return product
+}
 async function Homesectiontwo() {
-    let product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
-       cache:'no-cache'
-    }).then((r) => r.json())
-
+    let product = await getProduct()
     return (
         <Container>
             <div className='relative pb-8'>

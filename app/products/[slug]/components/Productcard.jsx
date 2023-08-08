@@ -16,7 +16,7 @@ function Productcard({ name, path, image }) {
                         view details
                 </MyLink>
                 <div className="flex items-center justify-center gap-2 text-emerald-800">
-                    <FaRegHeart/>
+                    {/* <FaRegHeart/> */}
                     {/* <span>Add to Wishlist</span> */}
                 </div>
             </div>

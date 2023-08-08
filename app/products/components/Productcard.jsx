@@ -9,7 +9,7 @@ function Productcard({ name, path, slug }) {
     return (
         <div className="w-[100%] p-1 flex flex-col rounded-[10px] shadowapply">
             <Myimage src={url} width={130} height={130} className='w-[100%] h-auto rounded-[10px]' priority={true} />
-            <div className="p-4 flex flex-col justify-center text-center gap-2">
+            <div className="p-4 flex flex-col justify-end text-center gap-2">
                 <h3 className="productname"><MyLink href={`/products/${slug}`}>{name}
                     {/* <span className="text-gray-500">({qty})</span> */}
                 </MyLink></h3>

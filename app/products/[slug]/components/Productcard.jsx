@@ -11,7 +11,7 @@ function Productcard({ name, path, image }) {
             <Myimage src={url} width={130} height={130} className='w-[100%] h-auto rounded-[10px]' priority={true} />
             <div className="p-4 flex flex-col justify-center text-center gap-2">
                 <h3 className="productname"><MyLink href={`/products/${path}`}>{name}</MyLink></h3>
-                <span className="productprice">{price}</span>
+                {/* <span className="productprice">{price}</span> */}
                 <MyLink href={`/products/${path}`} className="cartbtn">
                         view details
                 </MyLink>

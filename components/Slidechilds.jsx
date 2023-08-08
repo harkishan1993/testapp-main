@@ -11,7 +11,7 @@ function Slidechilds({ name, path, image }) {
                 <div className="p-4 flex flex-col justify-center text-center gap-2">
                     <h3 className="productname"><MyLink href={!!path ? `/products/product/${path}`:'/'}>{name}</MyLink></h3>
                     {/* <span className="productprice">{price}</span> */}
-                    <MyLink href={!!path ? `/products/product/${path}`:'/'} className="cartbtn">
+                    <MyLink href={!!path ? `/products/${path}`:'/'} className="cartbtn">
                         view
                 </MyLink>
                 </div>

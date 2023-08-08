@@ -13,7 +13,7 @@ function Productcard({ name, path, slug }) {
                 <h3 className="productname"><MyLink href={`/products/${slug}`}>{name}
                     {/* <span className="text-gray-500">({qty})</span> */}
                 </MyLink></h3>
-                <MyLink href={!!path ? `/products/${slug}` : '/'} className="cartbtn">
+                <MyLink href={`/products/${slug}`} className="cartbtn">
                     view
                 </MyLink>
             </div>

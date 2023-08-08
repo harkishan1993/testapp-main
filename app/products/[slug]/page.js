@@ -16,9 +16,9 @@ const getProduct = async (product) => {
   }
   return products
 }
-async function page({ params:{product} }) {
+async function page({ params:{slug} }) {
  
-     const products = await getProduct(product)
+     const products = await getProduct(slug)
   return (
     <>
       <Pageheader pageTitle='Products' />

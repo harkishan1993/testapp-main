@@ -5,10 +5,9 @@ import Sectiontitle from './Sectiontitle'
 const getProduct = async () => {
     let product = []
     try {
-        let product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
+         product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
             cache: 'no-cache'
-        })
-        product = await product.json()
+        }).then((r)=>r.json())
     } catch (error) {
         console.log(error)
     }

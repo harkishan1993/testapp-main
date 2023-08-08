@@ -1,7 +1,6 @@
 import Container from "@/components/Container"
 import Productcard from "./Productcard"
 
-
 function Relativeprod({productRel}) {
     return (
         <Container>

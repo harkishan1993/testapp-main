@@ -5,7 +5,7 @@ const getProduct = async () => {
   try {
      product = await fetch(`https://tenaciousinstrument.in/api/product`,{
       next:{
-        revalidate:0
+        revalidate:1
       }
      }).then((r)=>r.json()) 
     

@@ -4,7 +4,9 @@ const getProduct = async () => {
   let product = []
   try {
      product = await fetch(`https://tenaciousinstrument.in/api/product`,{
-      cache:'no-cache'
+      next:{
+        revalidate:0
+      }
      }).then((r)=>r.json()) 
     
   } catch (error) {

@@ -115,16 +115,16 @@ export const Productdetails = [
 
 export const application = [{
     path: "/application/signal-isolation",
-    name: "Signal Isolation: Methods, Needs, and Applications",
-    img: "/img/THW-1.jpg",
+    name: "Building Automation",
+    img: "/img/1_Building Automation.jpg",
     smalldesc: "What is Signal Isolation? When the voltages at the two ground points differ, the copper wires used for signal and ground form a circulating, closed […]",
     likes: 14,
     isLike: false
 },
 {
     path: "/application/temperature-controller",
-    name: "Temperature Controller",
-    img: "/img/THW-1.jpg",
+    name: "Server Room",
+    img: "/img/2_Server Room.jpg",
     smalldesc: "Temperature controllers are used for controlling and maintaining the temperature of any equipment, room, or closed space. Temperature controllers are of two principal types; Open […]",
     likes: 11,
     isLike: true
@@ -132,8 +132,8 @@ export const application = [{
     ,
 {
     path: "/application/multizone-heating-system",
-    name: "Multizone Heating System",
-    img: "/img/THW-1.jpg",
+    name: "Pharma Lab",
+    img: "/img/3_Pharma Lab.jpg",
     smalldesc: "A heating solution for creating the desired temperature gradient in long metal pipes.",
     likes: 12,
     isLike: false

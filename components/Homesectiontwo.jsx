@@ -6,8 +6,9 @@ const getProduct = async () => {
     let product = []
     try {
          product = await fetch(`https://tenaciousinstrument.in/api/slider`, {
+            method:'GET',
             next:{
-                revalidate:1
+                revalidate:0
             }
         }).then((r)=>r.json())
     } catch (error) {

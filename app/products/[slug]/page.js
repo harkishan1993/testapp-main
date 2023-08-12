@@ -8,8 +8,9 @@ const getProduct = async (product) => {
   let products = []
   try {
      products = await fetch(`https://tenaciousinstrument.in/api/product/${product}`,{
+      method:'GET',
       next:{
-        revalidate:1
+        revalidate:0
       }
       }).then((r)=>r.json()) 
     

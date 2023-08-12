@@ -18,7 +18,7 @@ export const getProductAll = () => {
                     url: true
                 }
             },
-            name: true
+            name: true,
         }
     })
 }
@@ -47,21 +47,28 @@ export const getProductBySlug = (slug) => {
                 }
             },
             CategoriesOnCategorys: {
-                select: {
-                    category: {
-                        include: {
-                            CategoriesOnCategorys: {
-                                select: {
-                                    producs: {
-                                        select: {
-                                            id: true,
-                                            image: {
-                                                select: {
-                                                    url: true
+               select:{
+                category:{
+                    select:{
+                        Subcategory:{
+                            select:{
+                                category:{
+                                    select:{
+                                        CategoriesOnCategorys:{
+                                            select:{
+                                                producs:{
+                                                    select:{
+                                                        name: true,
+                                                        image:{
+                                                            select:{
+                                                                url: true
+                                                            },
+                                                        },
+                                                        slug: true,
+                                                        id: true
+                                                    }
                                                 }
-                                            },
-                                            name: true,
-                                            slug: true,
+                                            }
                                         }
                                     }
                                 }
@@ -69,6 +76,7 @@ export const getProductBySlug = (slug) => {
                         }
                     }
                 }
+               }
             }
         }
     })
